@@ -878,6 +878,8 @@ module.exports = msgHandler = async (bocchi = new Client(), message) => {
                     await bocchi.sendText(from, eng.menuLeveling())
                 } else if (args[0] === '10') {
                     await bocchi.sendText(from, eng.menuAi())
+                } else if (args[0] === '11') {
+                    await bocchi.sendText(from, eng.menuNsfw())
                 } else {
                     await bocchi.sendText(from, eng.menu(jumlahUser, levelMenu, xpMenu, role, pushname, reqXpMenu, isPremium ? 'YES' : 'NO'))
                 }
